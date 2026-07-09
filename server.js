@@ -53,4 +53,8 @@ app.post(
 const tareasRouter = require('./routes/tareas');
 app.use('/api/tareas', tareasRouter);
 
+// Integración de rutas para servicio de clima (Sesión 3)
+const climaRouter = require('./routes/clima');
+app.use('/api/clima', climaRouter);
+
 module.exports = app;
